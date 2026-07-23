@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Berkat Mitra Anugrah — Safety Equipment Indonesia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="description" content="PT Berkat Mitra Anugrah — Supplier Safety Equipment, Fire Protection & Uniform terpercaya untuk industri Indonesia sejak 2012. APD berstandar SNI, pengiriman ke seluruh Indonesia.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230d7a38'/><text x='50%' y='54%' dominant-baseline='middle' text-anchor='middle' fill='white' font-family='Arial Black,sans-serif' font-weight='900' font-size='11'>BMA</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+/* ---- RESET ---- */
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+    --g:  #0d7a38;
+    --gm: #15a04f;
+    --gd: #0a3d1f;
+    --red:#c4172c;
+    --txt:#1a2e1c;
+    --txt2:#4b6356;
+    --bg:#f0fdf5;
+    --white:#fff;
+    --border:#d1f0dc;
+    --sh-sm:0 1px 3px rgba(0,0,0,.06);
+    --sh-md:0 4px 16px rgba(0,0,0,.07);
+    --sh-lg:0 20px 48px rgba(0,0,0,.1);
+    --sh-g:0 8px 24px rgba(13,122,56,.22);
+    --ease:cubic-bezier(.4,0,.2,1);
+}
+html{scroll-behavior:smooth;scroll-padding-top:76px;}
+body{font-family:'Plus Jakarta Sans',-apple-system,sans-serif;color:var(--txt);line-height:1.6;overflow-x:hidden;}
+img{max-width:100%;height:auto;display:block;}
+a{text-decoration:none;color:inherit;}
+ul{list-style:none;}
+
+/* ---- UTILS ---- */
+.container{max-width:1200px;margin:0 auto;padding:0 24px;}
+
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:50px;font-family:inherit;font-size:.95rem;font-weight:700;cursor:pointer;border:2px solid transparent;transition:all .25s var(--ease);}
+.btn-primary{background:var(--g);color:#fff;box-shadow:var(--sh-g);}
+.btn-primary:hover{background:#0a5c2a;transform:translateY(-2px);box-shadow:0 8px 20px rgba(13,122,56,.35);}
+.btn-ghost{background:rgba(255,255,255,.1);color:#fff;border-color:rgba(255,255,255,.55);}
+.btn-ghost:hover{background:rgba(255,255,255,.2);border-color:#fff;transform:translateY(-2px);}
+
+.section-header{text-align:center;margin-bottom:56px;}
+.s-label{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:10px;}
+.s-title{font-size:clamp(1.8rem,3vw,2.6rem);font-weight:800;color:var(--txt);line-height:1.2;margin-bottom:14px;}
+.s-title span{color:var(--g);}
+.s-desc{font-size:.95rem;color:var(--txt2);max-width:520px;margin:0 auto;}
+
+/* ---- FOCUS ---- */
+*:focus-visible{outline:2px solid var(--g);outline-offset:3px;border-radius:4px;}
+
+/* ---- REVEAL ---- */
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s var(--ease),transform .6s var(--ease);}
+.reveal.v{opacity:1;transform:translateY(0);}
+.reveal-l{opacity:0;transform:translateX(-36px);transition:opacity .6s var(--ease),transform .6s var(--ease);}
+.reveal-l.v{opacity:1;transform:translateX(0);}
+.reveal-r{opacity:0;transform:translateX(36px);transition:opacity .6s var(--ease),transform .6s var(--ease);}
+.reveal-r.v{opacity:1;transform:translateX(0);}
+.d1{transition-delay:.1s;}.d2{transition-delay:.2s;}.d3{transition-delay:.3s;}.d4{transition-delay:.4s;}
+
+/* ---- SCROLL PROGRESS ---- */
+#sp{position:fixed;top:0;left:0;height:3px;width:0;background:var(--red);z-index:9999;transition:width .1s linear;}
+
+/* ---- NAVBAR ---- */
+#nav{position:fixed;width:100%;top:0;z-index:1000;padding:20px 0;transition:all .35s var(--ease);}
+#nav.s{background:rgba(255,255,255,.95);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--border),var(--sh-sm);padding:13px 0;}
+.nav-in{display:flex;align-items:center;justify-content:space-between;}
+.nav-logo{display:flex;align-items:center;gap:10px;}
+.nl-logo-img{height:48px;width:auto;background:#fff;border-radius:8px;padding:5px 10px;display:block;object-fit:contain;flex-shrink:0;}
+#nav.s .nl-logo-img{background:#fff;border-radius:8px;padding:5px 10px;}
+.nl-text{display:flex;flex-direction:column;line-height:1.2;}
+.nl-brand{font-size:.9rem;font-weight:800;color:#fff;transition:color .3s;white-space:nowrap;}
+.nl-sub{font-size:.65rem;font-weight:400;color:rgba(255,255,255,.72);letter-spacing:.02em;white-space:nowrap;transition:color .3s;}
+#nav.s .nl-brand{color:var(--g);}
+#nav.s .nl-sub{color:var(--txt2);}
+.nav-links{display:flex;align-items:center;gap:4px;}
+.nav-links a{padding:7px 13px;border-radius:50px;font-size:.875rem;font-weight:600;color:rgba(255,255,255,.9);transition:all .2s;}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.14);}
+#nav.s .nav-links a{color:var(--txt);}
+#nav.s .nav-links a:hover{color:var(--g);background:var(--bg);}
+.nav-links a.cur{color:#fff;background:rgba(255,255,255,.16);}
+#nav.s .nav-links a.cur{color:var(--g);background:var(--bg);font-weight:700;}
+.nav-wa{display:flex;align-items:center;gap:6px;padding:8px 18px;background:#25D366;color:#fff;border-radius:50px;font-size:.825rem;font-weight:700;transition:all .25s;}
+.nav-wa:hover{background:#1ebe5b;transform:translateY(-1px);}
+.ham{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:4px;}
+.ham span{display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s;}
+#nav.s .ham span{background:var(--txt);}
+.ham.o span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+.ham.o span:nth-child(2){opacity:0;transform:scaleX(0);}
+.ham.o span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+/* ---- MOBILE MENU ---- */
+#mmenu{position:fixed;inset:0;background:var(--gd);z-index:999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;opacity:0;pointer-events:none;transition:opacity .3s var(--ease);}
+#mmenu.o{opacity:1;pointer-events:all;}
+#mmenu a{font-size:1.4rem;font-weight:700;color:rgba(255,255,255,.8);padding:10px 28px;border-radius:8px;transition:all .2s;}
+#mmenu a:hover{color:#fff;background:rgba(255,255,255,.1);}
+
+/* ---- HERO ---- */
+.hero{min-height:100vh;background:var(--g) url('hero.png') center/cover no-repeat;display:flex;flex-direction:column;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;inset:0;background:rgba(30,30,30,.55);z-index:0;pointer-events:none;}
+.hero::after{display:none;}
+.hero-body{flex:1;display:flex;align-items:center;padding:140px 0 80px;position:relative;z-index:1;}
+.hero-center{max-width:960px;margin:0 auto;text-align:center;}
+.hero-badge{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);border-radius:6px;padding:7px 18px;font-size:.78rem;font-weight:600;color:#fff;margin-bottom:28px;letter-spacing:.04em;}
+.hero-badge .badge-dot{width:7px;height:7px;border-radius:50%;background:var(--red);flex-shrink:0;}
+.hero-title{font-size:clamp(2.2rem,5vw,4rem);font-weight:800;color:#fff;line-height:1.12;margin-bottom:20px;}
+.hero-title .acc{color:#fff;text-decoration:none;}
+.hero-desc{font-size:1.05rem;color:rgba(255,255,255,.88);margin-bottom:36px;line-height:1.75;max-width:580px;margin-left:auto;margin-right:auto;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:40px;}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;}
+.htag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.26);border-radius:50px;padding:4px 13px;font-size:.78rem;color:#fff;}
+.htag i{color:var(--red);font-size:.68rem;}
+.btn-red{background:var(--g);color:#fff;box-shadow:0 4px 14px rgba(13,122,56,.2);}
+.btn-red:hover{background:var(--gd);transform:translateY(-2px);box-shadow:0 8px 20px rgba(13,122,56,.28);}
+
+/* ---- PRODUCTS ---- */
+.products-section{padding:96px 0;background:#fff;}
+.filter-tabs{display:flex;justify-content:center;gap:8px;flex-wrap:wrap;margin-bottom:44px;}
+.ftab{padding:8px 20px;border-radius:50px;font-family:inherit;font-size:.85rem;font-weight:600;cursor:pointer;border:2px solid var(--border);background:#fff;color:var(--txt2);transition:all .2s var(--ease);}
+.ftab:hover{border-color:var(--g);color:var(--g);}
+.ftab.a{background:var(--g);border-color:var(--g);color:#fff;box-shadow:var(--sh-g);}
+.prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(255px,1fr));gap:22px;}
+.pcard{background:#fff;border-radius:16px;border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:all .3s var(--ease);}
+.pcard:hover{transform:translateY(-6px);box-shadow:var(--sh-lg);border-color:transparent;}
+.pimg{overflow:hidden;aspect-ratio:1/1;background:#fff;display:flex;align-items:center;justify-content:center;}
+.pimg-ph{display:flex;align-items:center;justify-content:center;}
+.pimg-ph::after{content:'\f132';font-family:'Font Awesome 6 Free';font-weight:900;font-size:3rem;color:var(--border);}
+.pimg img{width:100%;height:100%;object-fit:contain;transition:transform .5s var(--ease);}
+.pcard:hover .pimg img{transform:scale(1.04);}
+.pbody{padding:16px 18px;display:flex;align-items:center;justify-content:space-between;gap:10px;}
+.pname{font-size:.95rem;font-weight:700;color:var(--txt);}
+.pcat{font-size:.73rem;color:var(--txt2);margin-top:2px;}
+.parr{width:34px;height:34px;background:var(--bg);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--g);font-size:.78rem;flex-shrink:0;transition:all .2s;}
+.pcard:hover .parr{background:var(--g);color:#fff;transform:rotate(-45deg);}
+
+/* ---- MODAL ---- */
+.moverlay{position:fixed;inset:0;background:rgba(0,0,0,.58);backdrop-filter:blur(4px);z-index:2000;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:all .3s var(--ease);}
+.moverlay.o{opacity:1;visibility:visible;}
+.modal{background:#fff;border-radius:20px;max-width:700px;width:100%;overflow:hidden;display:flex;flex-direction:row;align-items:stretch;transform:scale(.92) translateY(16px);transition:transform .3s var(--ease);box-shadow:var(--sh-lg);}
+.moverlay.o .modal{transform:scale(1) translateY(0);}
+.modal-img{width:300px;flex-shrink:0;aspect-ratio:1/1;object-fit:contain;background:#fff;display:block;border-right:1px solid var(--border);}
+.modal-bd{flex:1;padding:32px 28px;display:flex;flex-direction:column;justify-content:center;min-width:0;}
+.modal-hd{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px;}
+.modal-title{font-size:1.25rem;font-weight:800;color:var(--txt);line-height:1.3;}
+.modal-cat{display:inline-block;background:var(--bg);color:var(--g);font-size:.73rem;font-weight:700;padding:4px 12px;border-radius:50px;margin-bottom:10px;border:1px solid rgba(13,122,56,.18);}
+.modal-x{width:34px;height:34px;background:var(--bg);border:none;border-radius:50%;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--txt2);font-size:.9rem;transition:all .2s;flex-shrink:0;margin-left:10px;}
+.modal-x:hover{background:var(--red);color:#fff;}
+.modal-desc{color:var(--txt2);margin-bottom:24px;line-height:1.72;font-size:.9rem;flex:1;}
+.modal-wa{display:inline-flex;align-items:center;gap:9px;background:#25D366;color:#fff;padding:12px 22px;border-radius:50px;font-weight:700;font-size:.9rem;transition:all .25s;white-space:nowrap;align-self:flex-start;}
+.modal-wa:hover{background:#1ebe5b;transform:translateY(-2px);}
+
+/* ---- SERVICES ---- */
+.services-section{padding:96px 0;background:var(--bg);}
+.srv-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:22px;}
+.srv-grid .scard{grid-column:span 2;}
+.srv-grid .scard:nth-child(4){grid-column:2/span 2;}
+.srv-grid .scard:nth-child(5){grid-column:4/span 2;}
+.scard{background:#fff;border-radius:16px;padding:34px 26px;border:1px solid var(--border);border-left:4px solid transparent;transition:all .3s var(--ease);}
+.scard:hover{border-left-color:var(--g);transform:translateY(-4px);box-shadow:var(--sh-md);}
+.sicon{width:54px;height:54px;background:rgba(196,23,44,.08);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;color:var(--red);margin-bottom:18px;transition:all .3s;}
+.scard:hover .sicon{background:var(--red);color:#fff;}
+.scard h3{font-size:1.05rem;font-weight:700;color:var(--g);margin-bottom:9px;}
+.scard p{font-size:.875rem;color:var(--txt2);line-height:1.7;}
+
+/* ---- ABOUT ---- */
+.about-section{padding:96px 0;background:#fff;}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
+.about-lbl{display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red);margin-bottom:10px;}
+.about-title{font-size:clamp(1.5rem,2.5vw,2.1rem);font-weight:800;color:var(--txt);line-height:1.25;margin-bottom:18px;}
+.about-title span{color:var(--g);}
+.about-p{color:var(--txt2);margin-bottom:12px;line-height:1.75;font-size:.9rem;}
+.vm-grid{display:flex;flex-direction:column;gap:18px;margin-top:32px;}
+.vmc{background:var(--bg);border-radius:14px;padding:26px 28px;border:1px solid var(--border);border-left:4px solid var(--g);transition:all .3s var(--ease);}
+.vmc:hover{box-shadow:var(--sh-md);border-color:rgba(13,122,56,.25);border-left-color:var(--g);}
+.vmc .vl{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--red);margin-bottom:12px;}
+.vmc p,.vmc ol{font-size:.9rem;color:var(--txt);line-height:1.75;}
+.vmc ol{padding-left:18px;display:flex;flex-direction:column;gap:12px;}
+.astat-list{display:flex;flex-direction:column;gap:16px;}
+.astat{background:var(--bg);border-radius:16px;padding:22px 24px;border:1px solid var(--border);display:flex;align-items:center;gap:18px;transition:all .3s var(--ease);}
+.astat:hover{background:var(--g);border-color:var(--g);transform:translateY(-4px);box-shadow:var(--sh-g);}
+.astat-ico{width:48px;height:48px;background:rgba(13,122,56,.1);border-radius:10px;display:flex;align-items:center;justify-content:center;color:var(--g);font-size:1.2rem;flex-shrink:0;transition:all .3s;}
+.astat:hover .astat-ico{background:rgba(255,255,255,.18);color:#fff;}
+.astat-num{font-size:.88rem;font-weight:800;color:var(--txt);line-height:1.3;transition:color .3s;}
+.astat:hover .astat-num{color:#fff;}
+.astat-lbl{font-size:.74rem;color:var(--txt2);line-height:1.4;transition:color .3s;}
+.astat:hover .astat-lbl{color:rgba(255,255,255,.78);}
+
+/* ---- CLIENTS ---- */
+.clients-section{padding:96px 0;background:#fff;overflow:hidden;}
+.mq-wrap{overflow:hidden;margin:0 -24px;position:relative;}
+.mq-wrap::before,.mq-wrap::after{content:'';position:absolute;top:0;bottom:0;width:100px;z-index:1;}
+.mq-wrap::before{left:0;background:linear-gradient(to right,#fff,transparent);}
+.mq-wrap::after{right:0;background:linear-gradient(to left,#fff,transparent);}
+.mq-track{display:flex;gap:14px;animation:mq-rev 28s linear infinite;width:max-content;}
+.mq-track:hover{animation-play-state:paused;}
+.mq-track-rev{animation-name:mq-rev;}
+@keyframes mq{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+@keyframes mq-rev{from{transform:translateX(-50%);}to{transform:translateX(0);}}
+.cbox{width:190px;height:90px;background:#fff;border-radius:12px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;transition:all .3s;padding:10px 16px;backface-visibility:hidden;transform:translateZ(0);}
+.cbox:hover{border-color:var(--g);box-shadow:var(--sh-md);}
+.cbox img{width:100%;height:100%;object-fit:contain;object-position:center;image-rendering:-webkit-optimize-contrast;image-rendering:crisp-edges;}
+.cbox-lg{width:240px;height:96px;padding:4px 8px;}
+.cbox-ph{font-size:1.4rem;color:var(--g);opacity:.18;}
+.cbox-name{font-size:.72rem;font-weight:700;color:var(--txt2);text-align:center;padding:0 8px;line-height:1.3;align-items:center;justify-content:center;}
+
+/* ---- FOOTER ---- */
+footer{background:var(--g);color:#fff;padding:68px 0 0;}
+.foot-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:44px;padding-bottom:52px;}
+.fbrand .fname{font-size:1rem;font-weight:800;margin-bottom:14px;display:flex;flex-direction:row;align-items:center;gap:10px;}
+.fbrand .flogo{height:52px;width:auto;background:#fff;border-radius:8px;padding:6px 12px;display:block;object-fit:contain;}
+.fbrand p{font-size:.82rem;color:rgba(255,255,255,.75);line-height:1.7;margin-bottom:18px;}
+.fsoc{display:flex;gap:7px;}
+.fsoc a{width:34px;height:34px;background:rgba(255,255,255,.12);border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.8);font-size:.82rem;transition:all .2s;}
+.fsoc a:hover{background:rgba(255,255,255,.22);color:#fff;}
+.fcol h4{font-size:.78rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:18px;}
+.fcol ul{display:flex;flex-direction:column;gap:10px;}
+.fcol li{display:flex;align-items:flex-start;gap:8px;}
+.fcol li i{color:rgba(255,255,255,.7);margin-top:3px;font-size:.75rem;width:13px;flex-shrink:0;}
+.fcol li span{font-size:.82rem;color:rgba(255,255,255,.82);line-height:1.5;}
+.fmap{border-top:1px solid rgba(255,255,255,.07);padding:28px 0;}
+.fmap iframe{width:100%;height:260px;border:none;border-radius:14px;opacity:.85;}
+.fbot{border-top:1px solid rgba(255,255,255,.07);padding:18px 0;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
+.fbot p{font-size:.77rem;color:rgba(255,255,255,.55);}
+
+/* ---- FLOATING ---- */
+.f-wa{position:fixed;bottom:28px;right:28px;z-index:900;width:54px;height:54px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.45rem;box-shadow:0 4px 20px rgba(37,211,102,.5);transition:all .3s var(--ease);animation:pwa 2.5s ease-in-out infinite;}
+.f-wa:hover{transform:scale(1.12);animation:none;box-shadow:0 8px 28px rgba(37,211,102,.6);}
+@keyframes pwa{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,.5);}50%{box-shadow:0 4px 40px rgba(37,211,102,.8),0 0 0 8px rgba(37,211,102,.12);}}
+#btt{position:fixed;bottom:94px;right:28px;z-index:900;width:42px;height:42px;background:var(--g);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:.82rem;box-shadow:var(--sh-g);cursor:pointer;opacity:0;transform:translateY(8px);transition:all .3s var(--ease);border:none;}
+#btt.v{opacity:1;transform:translateY(0);}
+#btt:hover{background:var(--gd);transform:translateY(-2px);}
+
+/* ---- RESPONSIVE ---- */
+@media(max-width:1024px){.foot-grid{grid-template-columns:1fr 1fr;}.fbrand{grid-column:1/-1;}}
+@media(max-width:900px){.about-grid{gap:44px;}.srv-grid{grid-template-columns:1fr 1fr;}.srv-grid .scard,.srv-grid .scard:nth-child(4),.srv-grid .scard:nth-child(5){grid-column:span 1;}.prod-grid{grid-template-columns:repeat(auto-fill,minmax(220px,1fr));}.foot-grid{grid-template-columns:1fr 1fr;}.fbrand{grid-column:1/-1;}}
+@media(max-width:768px){
+    .nav-links,.nav-cta{display:none;}.ham{display:flex;}
+    .hero-body{padding:110px 0 60px;}
+    .about-grid{grid-template-columns:1fr;gap:44px;}
+    .foot-grid{grid-template-columns:1fr;gap:28px;}
+    .fbrand{grid-column:auto;}
+    .fbot{flex-direction:column;text-align:center;}
+}
+@media(max-width:480px){
+    .hero-btns{flex-direction:column;align-items:center;}
+    .prod-grid{grid-template-columns:1fr;}
+}
+    </style>
+</head>
+<body>
+
+<!-- Scroll Progress -->
+<div id="sp"></div>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/628138818103?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20safety%20equipment%20BMA" class="f-wa" target="_blank" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Back to Top -->
+<button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Kembali ke atas">
+    <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Mobile Menu -->
+<div id="mmenu">
+    <a href="#home" onclick="cmm()">Home</a>
+    <a href="#about" onclick="cmm()">Tentang Kami</a>
+    <a href="#products" onclick="cmm()">Produk</a>
+    <a href="#services" onclick="cmm()">Layanan</a>
+    <a href="#clients" onclick="cmm()">Klien</a>
+    <a href="https://wa.me/628138818103" target="_blank" onclick="cmm()" style="color:#25D366;margin-top:6px"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+</div>
+
+<!-- Navbar -->
+<nav id="nav">
+    <div class="container">
+        <div class="nav-in">
+            <a href="#home" class="nav-logo">
+                <img src="logo.png" alt="PT Berkat Mitra Anugrah" class="nl-logo-img">
+                <div class="nl-text">
+                    <span class="nl-brand">PT Berkat Mitra Anugrah</span>
+                    <span class="nl-sub">Safety Equipment &amp; Fire Extinguisher</span>
+                </div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#services">Layanan</a></li>
+                <li><a href="#clients">Klien</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="https://wa.me/628138818103?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20BMA" target="_blank" class="nav-wa">
+                    <i class="fab fa-whatsapp"></i> Hubungi Kami
+                </a>
+            </div>
+            <div class="ham" id="ham" onclick="tmm()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <div class="hero-center">
+                <div class="hero-badge reveal">
+                    Berdiri sejak 2012 &nbsp;·&nbsp; 14+ Tahun Pengalaman
+                </div>
+                <h1 class="hero-title reveal d1">
+                    Supplier <span class="acc">Safety Equipment</span><br>&amp;<br>Fire Extinguisher
+                </h1>
+                <div class="hero-btns reveal d3">
+                    <a href="#products" class="btn btn-red"><i class="fas fa-shield-alt"></i> Lihat Produk</a>
+                    <a href="https://wa.me/628138818103?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20produk%20BMA" target="_blank" class="btn btn-ghost"><i class="fab fa-whatsapp"></i> Tanya via WhatsApp</a>
+                </div>
+                <div class="hero-tags reveal d4">
+                    <span class="htag"><i class="fas fa-check-circle"></i> APD Berstandar SNI</span>
+                    <span class="htag"><i class="fas fa-check-circle"></i> Pengiriman Seluruh Indonesia</span>
+                    <span class="htag"><i class="fas fa-check-circle"></i> Project Supply</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="reveal-l">
+                <span class="about-lbl">Tentang Kami</span>
+                <h2 class="about-title">Mitra Safety Terpercaya <span>Sejak 2012</span></h2>
+                <p class="about-p">Sejak 2012, PT Berkat Mitra Anugrah hadir sebagai mitra terpercaya dalam penyediaan Safety Equipment, Fire Protection, dan Uniform untuk berbagai sektor industri di Indonesia.</p>
+                <p class="about-p">PT Berkat Mitra Anugrah berkomitmen menghadirkan produk berkualitas dengan pelayanan yang responsif dan berorientasi pada kebutuhan pelanggan.</p>
+                <div class="vm-grid">
+                    <div class="vmc">
+                        <div class="vl">Visi</div>
+                        <p>Menjadi mitra utama yang terpercaya dalam penyediaan solusi keselamatan kerja yang berkualitas.</p>
+                    </div>
+                    <div class="vmc">
+                        <div class="vl">Misi</div>
+                        <ol>
+                            <li>Menyediakan produk keselamatan kerja sebagai upaya perlindungan terhadap risiko kecelakaan.</li>
+                            <li>Mendukung penerapan budaya Keselamatan dan Kesehatan Kerja (K3) di berbagai sektor industri.</li>
+                            <li>Membangun hubungan tanpa batas melalui pelayanan yang jujur dan bertanggung jawab.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="astat-list reveal-r">
+                <div class="astat">
+                    <div class="astat-ico"><i class="fas fa-calendar-alt"></i></div>
+                    <div><div class="astat-num">14+ Tahun Pengalaman</div><div class="astat-lbl">Di industri safety Indonesia</div></div>
+                </div>
+                <div class="astat">
+                    <div class="astat-ico"><i class="fas fa-map-marker-alt"></i></div>
+                    <div><div class="astat-num">Jakarta Barat</div><div class="astat-lbl">Kantor berlokasi di Jakarta Barat</div></div>
+                </div>
+                <div class="astat">
+                    <div class="astat-ico"><i class="fas fa-truck"></i></div>
+                    <div><div class="astat-num">Layanan Seluruh Indonesia</div><div class="astat-lbl">Pengiriman ke berbagai wilayah Indonesia</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PRODUCTS -->
+<section id="products" class="products-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="s-label">Katalog Kami</span>
+            <h2 class="s-title">Produk <span>Safety Equipment</span></h2>
+            <p class="s-desc">Produk berkualitas berstandar SNI dan internasional untuk perlindungan tenaga kerja di berbagai sektor industri.</p>
+        </div>
+        <div class="filter-tabs reveal">
+            <button class="ftab a" data-cat="all">Semua Produk</button>
+            <button class="ftab" data-cat="head">Head Protection</button>
+            <button class="ftab" data-cat="face">Face Protection</button>
+            <button class="ftab" data-cat="eye">Eye Protection</button>
+            <button class="ftab" data-cat="ear">Ear Protection</button>
+            <button class="ftab" data-cat="resp">Respirator &amp; Mask</button>
+            <button class="ftab" data-cat="hand">Hand Protection</button>
+            <button class="ftab" data-cat="shoes">Safety Shoes</button>
+            <button class="ftab" data-cat="uniform">Uniform</button>
+            <button class="ftab" data-cat="fire">Fire Protection</button>
+            <button class="ftab" data-cat="fall">Fall Protection</button>
+            <button class="ftab" data-cat="others">Others</button>
+        </div>
+        <div class="prod-grid" id="prodGrid"></div>
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="moverlay" id="moverlay" onclick="cm(event)">
+    <div class="modal">
+        <img src="" alt="" class="modal-img" id="mimg">
+        <div class="modal-bd">
+            <div class="modal-hd">
+                <div><span class="modal-cat" id="mcat"></span><div class="modal-title" id="mtitle"></div></div>
+                <button class="modal-x" onclick="cm()"><i class="fas fa-times"></i></button>
+            </div>
+            <p class="modal-desc" id="mdesc"></p>
+            <a href="" class="modal-wa" id="mwa" target="_blank"><i class="fab fa-whatsapp"></i> Tanya Harga via WhatsApp</a>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="s-label">Yang Kami Tawarkan</span>
+            <h2 class="s-title">Layanan <span>Kami</span></h2>
+            <p class="s-desc">Solusi untuk Keselamatan dan Kesehatan Kerja (K3)</p>
+        </div>
+        <div class="srv-grid">
+            <div class="scard reveal d1">
+                <div class="sicon"><i class="fas fa-hard-hat"></i></div>
+                <h3>Konsultasi Safety</h3>
+                <p>Layanan konsultasi pemilihan produk keselamatan kerja yang tepat sesuai jenis industri dan potensi risiko di lapangan, tanpa biaya tambahan.</p>
+            </div>
+            <div class="scard reveal d2">
+                <div class="sicon"><i class="fas fa-boxes"></i></div>
+                <h3>Project Supply</h3>
+                <p>Melayani pengadaan dalam jumlah besar untuk proyek konstruksi, pabrik, rumah sakit, sekolah, pertambangan, migas, gudang, kawasan industri, dll.</p>
+            </div>
+            <div class="scard reveal d3">
+                <div class="sicon"><i class="fas fa-tshirt"></i></div>
+                <h3>Customize Seragam Kerja</h3>
+                <p>Pembuatan seragam kerja sesuai spesifikasi perusahaan, mencakup pilihan bahan, desain, dan sablon logo. Tersedia untuk kebutuhan korporat maupun skala proyek.</p>
+            </div>
+            <div class="scard reveal d4">
+                <div class="sicon"><i class="fas fa-fire-extinguisher"></i></div>
+                <h3>Refill APAR</h3>
+                <p>Jasa pengisian ulang Alat Pemadam Api Ringan (APAR) secara profesional untuk memastikan peralatan pemadam selalu dalam kondisi optimal dan siap digunakan.</p>
+            </div>
+            <div class="scard reveal d1">
+                <div class="sicon"><i class="fas fa-truck"></i></div>
+                <h3>Pengiriman Cepat</h3>
+                <p>Layanan pengiriman ke seluruh wilayah Indonesia dengan mengutamakan kecepatan dan keamanan barang. Tersedia opsi ekspres untuk kebutuhan mendesak di area Jakarta dan sekitarnya.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CLIENTS -->
+<section id="clients" class="clients-section">
+    <div class="container">
+        <div class="section-header reveal">
+            <span class="s-label">Dipercaya Oleh</span>
+            <h2 class="s-title">Klien <span>Kami</span></h2>
+            <p class="s-desc">Berbagai perusahaan dari beragam sektor industri telah mempercayakan kebutuhan safety mereka kepada kami</p>
+        </div>
+    </div>
+    <div class="mq-wrap">
+        <div class="mq-track" id="mqtrack1"></div>
+    </div>
+    <div class="mq-wrap" style="margin-top:14px">
+        <div class="mq-track mq-track-rev" id="mqtrack2"></div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="container">
+        <div class="foot-grid">
+            <div class="fbrand">
+                <div class="fname">
+                    <img src="logo.png" alt="PT Berkat Mitra Anugrah" class="flogo">
+                    PT Berkat Mitra Anugrah
+                </div>
+                <p>Supplier terpercaya Safety Equipment, Fire Protection &amp; Uniform untuk industri Indonesia sejak 2012.</p>
+                <div class="fsoc">
+                    <a href="https://wa.me/628138818103" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:bmasafety@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://instagram.com/bmasafety" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="fcol">
+                <h4>Kontak</h4>
+                <ul>
+                    <li><i class="fab fa-whatsapp"></i><span>0813 8818 103</span></li>
+                    <li><i class="fas fa-envelope"></i><span>bmasafety@gmail.com</span></li>
+                    <li><i class="fab fa-instagram"></i><span>@bmasafety</span></li>
+                </ul>
+            </div>
+            <div class="fcol">
+                <h4>Jam Operasional</h4>
+                <ul>
+                    <li><i class="fas fa-clock"></i><span>Senin – Jumat<br>09.00 – 17.00 WIB</span></li>
+                    <li><i class="fas fa-times-circle"></i><span>Sabtu &amp; Minggu<br>Tutup</span></li>
+                </ul>
+            </div>
+            <div class="fcol">
+                <h4>Lokasi</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i><span>Ruko Mutiara Taman Palem Blok D8 No.15-16, Jl. Kamal Raya Outer Ring Road, Cengkareng, Jakarta Barat 11730</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="fmap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d572.9001170084935!2d106.73489495768926!3d-6.1403813123175235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb7fd31b1677c89%3A0xe34a99db99a3dbf9!2sBerkat%20Mitra%20Anugrah%20PT.!5e0!3m2!1sid!2sid!4v1756805420415!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="fbot">
+            <p>© 2025 PT Berkat Mitra Anugrah. All rights reserved.</p>
+            <p>Safety Equipment · Fire Protection · Uniform</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+// Products data
+const prods = [
+    // Head Protection
+    {id:2, name:'Helm A3',                         cat:'head',    cl:'Head Protection',    img:'produk/Helm A3.png',                                desc:'Helm A3 lokal untuk perlindungan kepala pekerja lapangan. Dilengkapi dengan inner standard dan tali dagu.'},
+    {id:3, name:'Helm AAA',                        cat:'head',    cl:'Head Protection',    img:'produk/Helm AAA.png',                               desc:'Helm AAA berkualitas SNI berbahan kokoh dan tampilan mengilap. Dilengkapi dengan inner dan tali dagu.'},
+    {id:4, name:'Helm MSA',                        cat:'head',    cl:'Head Protection',    img:'produk/Helm MSA.png',                               desc:'Helm MSA berstandar internasional dilengkapi dengan inner dan tali dagu. Cocok untuk lingkungan kerja berisiko tinggi seperti pertambangan dan konstruksi.'},
+    {id:40,name:'Helm NSA Vented',                cat:'head',    cl:'Head Protection',    img:'produk/Helm NSA Vented.png',                        desc:'Helm NSA Vented berkualitas SNI dilengkapi dengan inner dan tali dagu. Cocok untuk lingkungan kerja berisiko tinggi seperti pertambangan dan konstruksi.'},
+    // Face Protection
+    {id:5, name:'Bracket Face Shield',             cat:'face',    cl:'Face Protection',    img:'produk/Bracket Face Shield.png',                    desc:'Pelindung wajah yang dipasang pada helm safety. Melindungi wajah dari percikan dan debu saat bekerja.'},
+    {id:31,name:'Topi Face Shield',               cat:'face',    cl:'Face Protection',    img:'produk/Topi Face Shield.jpg',                       desc:'Topi kerja dengan pelindung wajah menyatu, praktis melindungi wajah dari debu dan percikan tanpa alat tambahan.'},
+    {id:6, name:'Welding Mask',                    cat:'face',    cl:'Face Protection',    img:'produk/Welding Mask.png',                          desc:'Topeng las dengan lensa yang gelap untuk menjaga mata dan wajah dari percikan api saat pengelasan berlangsung.'},
+    // Eye Protection
+    {id:8, name:'Kacamata Safety Kings KY 2222',   cat:'eye',     cl:'Eye Protection',     img:'produk/Kacamata Safety Kings KY 2222.png',          desc:'Kacamata safety yang ringan dan nyaman dipakai untuk melindungi mata dari debu dan serpihan saat bekerja.'},
+    {id:9, name:'Kacamata Safety Kotak',           cat:'eye',     cl:'Eye Protection',     img:'produk/Kacamata Safety Kotak.png',                  desc:'Kacamata safety kotak dapat menutup area mata secara penuh sehingga cocok dipakai di area berdebu.'},
+    {id:10,name:'Kacamata Safety Techno',          cat:'eye',     cl:'Eye Protection',     img:'produk/Kacamata Safety Techno.png',                 desc:'Kacamata safety bergaya sporty yang nyaman dipakai lama saat bekerja. Melindungi mata dari sinar UV dan partikel debu saat bekerja di lapangan.'},
+    // Ear Protection
+    {id:12,name:'Earmuff',                          cat:'ear',     cl:'Ear Protection',     img:'produk/Earmuff Safety.png',                         desc:'Penutup telinga dengan bantalan empuk yang nyaman dipakai dalam waktu lama. Meredam suara bising di area kerja.'},
+    {id:11,name:'Earplug',                          cat:'ear',     cl:'Ear Protection',     img:'produk/Ear Plug.png',                               desc:'Penyumbat telinga yang praktis dan efektif meredam kebisingan di lingkungan industri.'},
+    // Respirator & Mask
+    {id:32,name:'Respirator Single',               cat:'resp',    cl:'Respirator & Mask',  img:'produk/Respirator Single.png',                     desc:'Masker respirator dengan satu filter yang melindungi pernapasan dari debu dan uap kimia ringan.'},
+    {id:33,name:'Respirator Double',               cat:'resp',    cl:'Respirator & Mask',  img:'produk/Respirator Double.png',                      desc:'Masker respirator dua filter untuk perlindungan pernapasan lebih maksimal dari debu, uap, dan gas kimia.'},
+    {id:72,name:'Cartridge RC 203',                cat:'resp',    cl:'Respirator & Mask',  img:'produk/Cartridge RC 203.png',                       desc:'Cartridge pengganti untuk respirator yang menyaring uap dan gas organik saat bekerja.'},
+    {id:13,name:'Masker',                           cat:'resp',    cl:'Respirator & Mask',  img:'produk/Masker.jpeg',                                desc:'Masker pelindung pernapasan sehari-hari dari debu dan partikel halus di udara.'},
+    {id:52,name:'Masker N95',                       cat:'resp',    cl:'Respirator & Mask',  img:'produk/Masker N95.png',                             desc:'Masker dengan filtrasi tinggi yang melindungi pernapasan dari partikel halus di udara.'},
+    // Hand Protection
+    {id:14,name:'Sarung Tangan Benang 5',          cat:'hand',    cl:'Hand Protection',    img:'produk/Sarung Tangan Benang 5.png',                 desc:'Sarung tangan rajut yang ringan untuk melindungi jari saat bekerja.'},
+    {id:15,name:'Sarung Tangan Benang 8',          cat:'hand',    cl:'Hand Protection',    img:'produk/Sarung Tangan Benang 8.png',                 desc:'Sarung tangan rajut dengan tekstur lebih rapat, memberi perlindungan tambahan dari gesekan.'},
+    {id:16,name:'Cut Resistant Glove',             cat:'hand',    cl:'Hand Protection',    img:'produk/Cut Resistant Glove.png',                    desc:'Sarung tangan anti-sayat yang melindungi tangan dari benda tajam saat bekerja.'},
+    {id:17,name:'Sarung Tangan Dotting',           cat:'hand',    cl:'Hand Protection',    img:'produk/Sarung Tangan Dotting.png',                  desc:'Sarung tangan dengan lapisan anti-selip di telapak, mempermudah genggaman pada permukaan licin.'},
+    {id:34,name:'Sarung Tangan Gunte',            cat:'hand',    cl:'Hand Protection',    img:'produk/Sarung Tangan Gunte.png',                    desc:'Sarung tangan safety untuk melindungi jari tangan dari gesekan dan panas.'},
+    {id:36,name:'Working Glove Gekko',            cat:'hand',    cl:'Hand Protection',    img:'produk/Working Glove Gekko.jpeg',                   desc:'Sarung tangan kerja dengan genggaman kuat untuk pekerja lapangan.'},
+    {id:35,name:'Rubber Glove Seegul',            cat:'hand',    cl:'Hand Protection',    img:'produk/Rubber Glove Seegul.webp',                   desc:'Sarung tangan karet untuk melindungi tangan dari cairan kimia dan bahan korosif.'},
+    // Safety Shoes
+    {id:73,name:'Krushers Shoes',                  cat:'shoes',   cl:'Safety Shoes',       img:'produk/Krushers Shoes.png',                         desc:'Sepatu safety yang memberi perlindungan ekstra bagi kaki saat berada di area kerja industri berat.'},
+    {id:41,name:'Cheetah Shoes',                   cat:'shoes',   cl:'Safety Shoes',       img:'produk/Cheetah Shoes.png',                          desc:'Sepatu safety yang memberi perlindungan ekstra bagi kaki saat berada di area kerja industri berat.'},
+    {id:42,name:'King Shoes',                      cat:'shoes',   cl:'Safety Shoes',       img:'produk/King Shoes.png',                             desc:'Sepatu safety yang memberi perlindungan ekstra bagi kaki saat berada di area kerja industri berat.'},
+    {id:43,name:'Track Shoes',                     cat:'shoes',   cl:'Safety Shoes',       img:'produk/Track Shoes.avif',                           desc:'Sepatu safety yang memberi perlindungan ekstra bagi kaki saat berada di area kerja industri berat.'},
+    {id:19,name:'Safety Boots Leopard',            cat:'shoes',   cl:'Safety Shoes',       img:'produk/Safety Boots Leopard 0458.png',              desc:'Sepatu boot dengan sol anti-selip yang melindungi kaki dari benturan dan tekanan berat. Tersedia jenis Toe Cap dan Non Toe Cap.'},
+    // Uniform
+    {id:37,name:'Rompi ID Card',                   cat:'uniform', cl:'Uniform',            img:'produk/Rompi ID Card.png',                          desc:'Rompi kerja dengan kantong ID card di bagian dada, memudahkan identifikasi pekerja di lapangan.'},
+    {id:22,name:'Rompi Jaring 6K',                 cat:'uniform', cl:'Uniform',            img:'produk/Rompi Jaring 6K.png',                        desc:'Rompi jaring dilengkapi dengan 6 kantong serbaguna yang cocok untuk pekerja lapangan.'},
+    {id:23,name:'Rompi Jaring X',                  cat:'uniform', cl:'Uniform',            img:'produk/Rompi Jaring X.png',                         desc:'Rompi jaring dengan strip reflektor yang menjaga keamanan pekerja saat kondisi cahaya rendah.'},
+    {id:24,name:'Rompi Safety Drill',              cat:'uniform', cl:'Uniform',            img:'produk/Rompi Safety Drill.png',                     desc:'Rompi kerja dengan kantong serbaguna dan strip reflektor untuk visibilitas ekstra.'},
+    {id:38,name:'Rompi V Jaring',                 cat:'uniform', cl:'Uniform',            img:'produk/Rompi V Jaring.jpeg',                        desc:'Rompi jaring dengan desain minimalis untuk meningkatkan keselamatan pekerja lapangan.'},
+    {id:39,name:'Rompi V Karet',                  cat:'uniform', cl:'Uniform',            img:'produk/Rompi V Karet.png',                          desc:'Rompi karet dengan model simpel yang mendukung keselamatan pekerja saat bertugas di lapangan.'},
+    {id:44,name:'Rompi Polyester 3 Line Kombinasi',cat:'uniform', cl:'Uniform',            img:'produk/Rompi Polyester 3 Line Kombinasi.png',       desc:'Rompi dengan tiga strip reflektor untuk visibilitas tinggi di area proyek dan jalan raya.'},
+    {id:45,name:'Rompi Polyester 4 Line Kombinasi',cat:'uniform', cl:'Uniform',            img:'produk/Rompi Polyester 4 Line Kombinasi.png',       desc:'Rompi dengan empat strip reflektor untuk visibilitas maksimal di kondisi minim cahaya.'},
+    {id:70,name:'Rompi Rusuk Security',            cat:'uniform', cl:'Uniform',            img:'produk/Rompi Rusuk Security.png',                   desc:'Rompi security dengan strip reflektor yang menjaga visibilitas petugas saat bertugas.'},
+    {id:71,name:'Rompi Rusuk Security Double Mesh',cat:'uniform', cl:'Uniform',            img:'produk/Rompi Rusuk Security Double Mesh.png',       desc:'Rompi security berbahan mesh ganda yang sejuk dipakai dan menjaga visibilitas petugas saat bertugas.'},
+    {id:21,name:'Kemeja Lengan Panjang',           cat:'uniform', cl:'Uniform',            img:'produk/Kemeja Lengan Panjang.png',                  desc:'Kemeja kerja lengan panjang yang rapi dipakai dan dapat disesuaikan dengan identitas perusahaan.'},
+    {id:25,name:'Seragam Kerja Baju Celana',       cat:'uniform', cl:'Uniform',            img:'produk/Seragam Kerja Baju Celana.png',              desc:'Setelan seragam kerja baju dan celana untuk kebutuhan berbagai sektor industri.'},
+    {id:26,name:'Wearpack Terusan',                cat:'uniform', cl:'Uniform',            img:'produk/Wearpack Terusan.png',                       desc:'Wearpack terusan yang melindungi seluruh tubuh dari debu dan kotoran saat bekerja.'},
+    // Fire Protection
+    {id:29,name:'Alat Pemadam Api Ringan SNI',      cat:'fire',    cl:'Fire Protection',    img:'produk/APAR + Refill.png',                          desc:'Alat pemadam api ringan untuk menangani kebakaran di berbagai skala kebutuhan.'},
+    {id:75,name:'Refill APAR',                     cat:'fire',    cl:'Fire Protection',    img:'produk/Refill APAR.png',                            desc:'Tersedia refill powder ukuran 2-9 kg untuk isi ulang alat pemadam api.'},
+    {id:48,name:'Fire Jacket Merah',               cat:'fire',    cl:'Fire Protection',    img:'produk/Fire Jacket Merah.png',                      desc:'Jaket pemadam yang melindungi tubuh dari panas dan percikan api saat penanganan kebakaran.'},
+    {id:49,name:'Fire Jacket Oren',                cat:'fire',    cl:'Fire Protection',    img:'produk/Fire Jacket Oren.jpg',                       desc:'Jaket pemadam yang melindungi tubuh dari panas dan percikan api saat penanganan kebakaran.'},
+    {id:50,name:'Hose Reel',                       cat:'fire',    cl:'Fire Protection',    img:'produk/Hose Reel.png',                              desc:'Gulungan selang pemadam yang memudahkan penyaluran air saat terjadi kebakaran.'},
+    {id:51,name:'Hydrant Box',                     cat:'fire',    cl:'Fire Protection',    img:'produk/Hydrant Box.png',                            desc:'Kotak penyimpanan perlengkapan hydrant yang menjaga peralatan pemadam tetap rapi dan siap pakai.'},
+    // Fall Protection
+    {id:60,name:'Excellent Body Harness 0257A',    cat:'fall',    cl:'Fall Protection',    img:'produk/Excellent Body Harness 0257A.png',           desc:'Full body harness dengan tali pengaman ganda yang melindungi pekerja dari risiko jatuh di ketinggian.'},
+    {id:61,name:'Excellent Body Harness 0261',     cat:'fall',    cl:'Fall Protection',    img:'produk/Excellent Body Harness 0261.png',            desc:'Full body harness yang menjaga keselamatan pekerja saat beraktivitas di area ketinggian.'},
+    {id:62,name:'Excellent Body Harness 0375 with Absorber', cat:'fall', cl:'Fall Protection', img:'produk/Excellent Body Harness 0375 with Absorber.png', desc:'Full body harness dilengkapi absorber peredam hentakan untuk keselamatan ekstra saat bekerja di ketinggian.'},
+    {id:63,name:'Techno Body Harness 0475',        cat:'fall',    cl:'Fall Protection',    img:'produk/Techno Body Harness 0475.png',               desc:'Full body harness yang melindungi pekerja dari risiko jatuh saat bekerja di ketinggian.'},
+    {id:64,name:'Techno Body Harness 0476 with Absorber', cat:'fall', cl:'Fall Protection', img:'produk/Techno Body Harness 0476 with Absorber.png', desc:'Full body harness dilengkapi absorber peredam hentakan untuk keselamatan ekstra saat bekerja di ketinggian.'},
+    // Others
+    {id:30,name:'Barricade Police Line',           cat:'others',  cl:'Others',             img:'produk/Barricade Police Line.png',                  desc:'Garis pembatas yang mudah dipasang untuk mengamankan area kerja berbahaya.'},
+    {id:46,name:'Tas Pinggang/Tool',                cat:'others',  cl:'Others',             img:'produk/Tas Pinggang Perkakas Tipe 1.png',           desc:'Tas pinggang dengan banyak kantong untuk menyimpan alat kerja kecil, praktis dibawa di lapangan.'},
+    {id:47,name:'Tas Pinggang/Tool Serbaguna',     cat:'others',  cl:'Others',             img:'produk/Tas Pinggang Perkakas Tipe 2.png',           desc:'Tas pinggang dengan kantong multifungsi yang memudahkan pekerja membawa peralatan saat bertugas.'},
+    {id:54,name:'Caution Sign',                    cat:'others',  cl:'Others',             img:'produk/Caution Sign.png',                           desc:'Papan tanda peringatan lantai licin yang mencegah risiko terpeleset di area licin.'},
+    {id:53,name:'Baton Traffic Light',             cat:'others',  cl:'Others',             img:'produk/Baton Traffic Light.png',                    desc:'Tongkat lampu isyarat yang membantu mengatur lalu lintas dengan jelas pada malam hari.'},
+    {id:55,name:'Convex Mirror',                   cat:'others',  cl:'Others',             img:'produk/Convex Mirror.png',                          desc:'Cermin cembung yang memperluas sudut pandang pengemudi di area rawan tabrakan.'},
+    {id:57,name:'Road Barrier',                    cat:'others',  cl:'Others',             img:'produk/Road Barrier.png',                           desc:'Pembatas jalan yang mengarahkan dan mengamankan lalu lintas di jalan.'},
+    {id:74,name:'Water Barrier',                   cat:'others',  cl:'Others',             img:'produk/Water Barricade.png',                        desc:'Pembatas jalan berisi air yang mudah dipindahkan untuk mengamankan area kerja dan lalu lintas.'},
+    {id:58,name:'Stick Cone',                      cat:'others',  cl:'Others',             img:'produk/Stick Cone.png',                             desc:'Tiang pembatas dengan alas kokoh untuk mengatur jalur dan membatasi area kerja.'},
+    {id:59,name:'Traffic Cone',                    cat:'others',  cl:'Others',             img:'produk/Traffic Cone.png',                           desc:'Kerucut lalu lintas yang menandai area berbahaya dan mengarahkan kendaraan dengan aman.'},
+    {id:65,name:'Ring Buoy',                       cat:'others',  cl:'Others',             img:'produk/Ring Buoy.png',                              desc:'Pelampung penyelamat yang membantu evakuasi cepat saat terjadi kecelakaan di air.'},
+    {id:56,name:'Life Jacket',                     cat:'others',  cl:'Others',             img:'produk/Life Jacket.png',                            desc:'Jaket pelampung yang menjaga keselamatan saat bekerja atau beraktivitas di atas air.'},
+    {id:66,name:'Jas Hujan Aether',                cat:'others',  cl:'Others',             img:'produk/Jas Hujan Aether.png',                       desc:'Jas hujan panjang dengan reflektor yang menjaga keamanan dan tetap kering saat bekerja di kondisi hujan.'},
+    {id:67,name:'Jas Hujan Techno',                cat:'others',  cl:'Others',             img:'produk/Jas Hujan Techno.png',                       desc:'Setelan jas hujan dan jas hujan ponco dengan reflektor untuk menjaga visibilitas dan melindungi tubuh dari hujan saat bekerja.'},
+    {id:68,name:'Jas Hujan Vpro',                  cat:'others',  cl:'Others',             img:'produk/Jas Hujan Vpro.png',                         desc:'Setelan jas hujan dengan reflektor yang menjaga visibilitas dan melindungi tubuh dari hujan saat bekerja.'},
+];
+
+function renderProds(cat){
+    const list = cat==='all'?prods:prods.filter(p=>p.cat===cat);
+    document.getElementById('prodGrid').innerHTML = list.map((p,i)=>`
+        <div class="pcard reveal d${(i%4)+1}" onclick="om(${p.id})">
+            <div class="pimg"><img src="${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.parentNode.classList.add('pimg-ph')"></div>
+            <div class="pbody">
+                <div><div class="pname">${p.name}</div><div class="pcat">${p.cl}</div></div>
+                <div class="parr"><i class="fas fa-arrow-right"></i></div>
+            </div>
+        </div>`).join('');
+    obs();
+}
+
+document.querySelectorAll('.ftab').forEach(t=>{
+    t.addEventListener('click',function(){
+        document.querySelectorAll('.ftab').forEach(x=>x.classList.remove('a'));
+        this.classList.add('a');
+        renderProds(this.dataset.cat);
+    });
+});
+renderProds('all');
+
+// Modal
+function om(id){
+    const p=prods.find(x=>x.id===id); if(!p) return;
+    document.getElementById('mimg').src=p.img;
+    document.getElementById('mimg').alt=p.name;
+    document.getElementById('mtitle').textContent=p.name;
+    document.getElementById('mcat').textContent=p.cl;
+    document.getElementById('mdesc').textContent=p.desc;
+    document.getElementById('mwa').href=`https://wa.me/628138818103?text=Halo%2C%20saya%20ingin%20menanyakan%20harga%20${encodeURIComponent(p.name)}`;
+    document.getElementById('moverlay').classList.add('o');
+    document.body.style.overflow='hidden';
+}
+function cm(e){
+    if(e&&e.target!==document.getElementById('moverlay')&&!e.target.closest('.modal-x')) return;
+    document.getElementById('moverlay').classList.remove('o');
+    document.body.style.overflow='';
+}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('moverlay').classList.remove('o');document.body.style.overflow='';}});
+
+// Clients marquee
+const clients = [
+    {src:'klien/Pulaintan.png.webp',         alt:'Pulau Intan',           lg:true},
+    {src:'klien/Berca.png',                 alt:'Berca',                 lg:true},
+    {src:'klien/Gema-Bahana-Utama.png',     alt:'PT Gema Bahana Utama',  lg:true},
+    {src:'klien/Indocrane.png',             alt:'Indocrane',             lg:true},
+    {src:'klien/Sandimar.jpg',              alt:'Sandimar Citra Lestari'},
+    {src:'klien/Jagat-Baja-Prima.png',      alt:'Jagat Baja Prima'},
+    {src:'klien/Jagat-Kontruksi.png',       alt:'Jagat Konstruksi'},
+    {src:'klien/Tatamulia.png',             alt:'Tata Mulia'},
+    {src:'klien/Berca.webp',                 alt:'Berca Buana Sakti',     lg:true},
+    {src:'klien/Rekagunatek-Persada.png',   alt:'PT Rekagunatek Persada', lg:true},
+    {src:'klien/Arta-Mega-Serindo.jpg',     alt:'Arta Mega Serindo',     lg:true},
+    {src:'klien/Indonesia-Pondasi-Raya.png',alt:'Indonesia Pondasi Raya',lg:true},
+    {src:'klien/Autoaccindo.png',            alt:'Autoaccindo',           lg:true},
+    {src:'klien/Arta-Tirta-Kirana.png',      alt:'Anta Tirta Kirana',     lg:true},
+    {src:'klien/Arthamigas.png',             alt:'Arthamigas',            lg:true},
+    {src:'klien/CentralPark.png',            alt:'Central Park'},
+    {src:'klien/ESPE.jpeg',                  alt:'ESPE'},
+    {src:'klien/Jaya-Kencana.png',           alt:'Jaya Kencana'},
+    {src:'klien/KIK.png',                    alt:'Karya Intertek Kencana',lg:true},
+    {src:'klien/Multikon.png',               alt:'Multikon'},
+    {src:'klien/Kajima-Indonesia.png',       alt:'PT Kajima Indonesia',   lg:true},
+    {src:'klien/Solobhakti-Trading-Company.avif', alt:'Solobhakti Trading Company'},
+];
+const mkBox = c=>`<div class="cbox${c.lg?' cbox-lg':''}"><img src="${c.src}" alt="${c.alt}" loading="lazy"></div>`;
+const half = Math.ceil(clients.length/2);
+const ci1 = clients.slice(0,half).map(mkBox).join('');
+const ci2 = clients.slice(half).map(mkBox).join('');
+document.getElementById('mqtrack1').innerHTML = ci1+ci1;
+document.getElementById('mqtrack2').innerHTML = ci2+ci2;
+
+// Navbar scroll
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>{
+    const y=window.scrollY;
+    nav.classList.toggle('s',y>40);
+    document.getElementById('sp').style.width=(y/(document.documentElement.scrollHeight-window.innerHeight)*100)+'%';
+    document.getElementById('btt').classList.toggle('v',y>400);
+},{passive:true});
+
+// Mobile menu
+function tmm(){document.getElementById('mmenu').classList.toggle('o');document.getElementById('ham').classList.toggle('o');document.body.style.overflow=document.getElementById('mmenu').classList.contains('o')?'hidden':'';}
+function cmm(){document.getElementById('mmenu').classList.remove('o');document.getElementById('ham').classList.remove('o');document.body.style.overflow='';}
+
+// Nav active section highlight
+const _secs=document.querySelectorAll('section[id]');
+const _nlo=new IntersectionObserver(ee=>{
+    ee.forEach(e=>{if(e.isIntersecting){
+        document.querySelectorAll('.nav-links a').forEach(a=>a.classList.remove('cur'));
+        const l=document.querySelector(`.nav-links a[href="#${e.target.id}"]`);
+        if(l)l.classList.add('cur');
+    }});
+},{threshold:.35,rootMargin:'-60px 0px -40% 0px'});
+_secs.forEach(s=>_nlo.observe(s));
+
+// Scroll reveal
+function obs(){
+    const io=new IntersectionObserver(entries=>{
+        entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('v');io.unobserve(e.target);}});
+    },{threshold:.1,rootMargin:'0px 0px -30px 0px'});
+    document.querySelectorAll('.reveal,.reveal-l,.reveal-r').forEach(el=>{if(!el.classList.contains('v'))io.observe(el);});
+}
+obs();
+</script>
+</body>
+</html>
