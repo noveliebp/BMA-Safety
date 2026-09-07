@@ -244,10 +244,33 @@ footer{background:var(--g);color:#fff;padding:68px 0 0;}
     .foot-grid{grid-template-columns:1fr;gap:28px;}
     .fbrand{grid-column:auto;}
     .fbot{flex-direction:column;text-align:center;}
+
+    /* Modal: stack image on top of details instead of side-by-side */
+    .moverlay{padding:16px;}
+    .modal{flex-direction:column;max-height:88vh;overflow-y:auto;border-radius:16px;}
+    .modal-img{width:100%;height:auto;max-height:240px;border-right:none;border-bottom:1px solid var(--border);}
+    .modal-bd{padding:24px 20px;justify-content:flex-start;}
+
+    /* Services: one column, comfortable line length */
+    .srv-grid{grid-template-columns:1fr;gap:16px;}
+    .srv-grid .scard,.srv-grid .scard:nth-child(4),.srv-grid .scard:nth-child(5){grid-column:span 1;}
+    .scard{padding:26px 22px;}
+
+    /* Client logos: scale down to stay proportional on phones */
+    .cbox{width:128px;height:62px;padding:8px 12px;}
+    .cbox-lg{width:150px;height:64px;padding:5px 8px;}
+    .mq-track{gap:10px;}
 }
 @media(max-width:480px){
     .hero-btns{flex-direction:column;align-items:center;}
     .prod-grid{grid-template-columns:1fr;}
+
+    .modal-title{font-size:1.1rem;}
+    .modal-desc{font-size:.86rem;margin-bottom:20px;}
+    .modal-wa{padding:11px 20px;font-size:.86rem;}
+
+    .cbox{width:112px;height:56px;padding:7px 10px;}
+    .cbox-lg{width:132px;height:58px;padding:4px 6px;}
 }
     </style>
 </head>
